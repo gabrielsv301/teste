@@ -1,0 +1,85 @@
+body{
+    background-image: url(imagens/UEFA\ Champions\ League™\ Entrance\ +\ Anthem.jpeg); 
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    
+} 
+.conteiner{
+    width: 300px;
+    height: 550px;
+    border: solid 2px #000;
+    border-radius: 20px;
+    background: linear-gradient(to right,#0011ff,#ff0000);
+    box-shadow: 7px 10px 5px #0000009c;
+    margin: auto; 
+}
+.block{
+    border: solid 1px ;
+    border-radius: 15%;
+    box-shadow: 7px 10px 5px #00000081;
+    width: 200px;
+    height: 100px;
+    margin: 10px 50px 5px ;
+    text-align: center;
+    transition: border 1s , width 2s, height 2s,color 2s,font-size 2s,font-family 2s;
+    transition-timing-function: ease-in;
+    background: linear-gradient(to right, #8400ff,#ff008c);
+    overflow-y: scroll;
+    
+    
+}
+.block:hover{
+    border: solid 2px #000;
+    width: 200px;
+    height: 200px;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p,#block1,#block2,#block3,#block4{
+    /* overflow-y: scroll; */
+    word-break: break-all;
+    font-size: 15px;
+    text-align: center;
+}
+#block2{
+    background: linear-gradient(to right,#038101,#fffb00);
+}
+#block3{
+    background: linear-gradient(to right,#00a2ff,#e4dada);
+}
+#block4{
+    background: linear-gradient(to right,#ff0000,#0c5503);
+}
+
+
+/* resposivos */
+
+@media screen and (min-width:360px) and (max-width:740px) {
+    .conteiner{
+        height: 565px;
+    }
+    
+}
+
+
+@media screen and (min-width:600px ) and (max-width:960px) {
+    .conteiner{
+        width: 500px;
+        height: 660px;
+    }
+    .block{
+        margin: 15px 105px 15px ;
+        width: 280px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    .block:hover{
+        border: solid 2px #000;
+        width: 280px;
+        height: 280px;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
